@@ -1,0 +1,33 @@
+<!--Profil-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Profil</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentPopover($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div padding-top text-center >
+    <div class="profilePict">
+	    <img src="assets/icon/user.png" *ngIf="!profilePict">
+		  <img [src]="profilePict" *ngIf="profilePict">
+    </div>
+	    <!--h2>{{nama}}</h2-->
+	  <button ion-item (click)="editFoto()" >
+				<div class="editFoto">
+					<ion-icon name="camera"> </ion-icon>
+				</div>
+		</button>
+	</div>
+
+		
+</ion-content>
+
+
+

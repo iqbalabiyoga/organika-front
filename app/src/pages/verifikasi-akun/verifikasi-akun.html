@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Verifikasi Akun</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <p padding-left>Silahkan verifikasi akun anda pada email yang telah didaftarkan, kemudian silahkan login kembali</p>
+  <!--p padding-left>Email anda: {{email}}</p-->
+  <ion-item no-lines>
+    <button ion-button item-left (click)="reSendVerifikasi()">Kirim ulang verifikasi</button>
+    <button ion-button (click)="login()">Login</button>
+  </ion-item>
+</ion-content>
